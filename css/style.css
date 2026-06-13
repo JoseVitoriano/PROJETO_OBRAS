@@ -91,6 +91,9 @@ nav ul li a:hover{
 .corpo h1{
 
     font-size: 55px;
+    justify-content: left;
+    align-items: center;
+    margin-right: 810px;
     padding: 20px;
     color: white;
     font-family: var(--fonte_padrao);
@@ -99,8 +102,9 @@ nav ul li a:hover{
 .corpo p{
 
     font-size: 20px;
-    margin: 20px;
-    top: 20px;
+    justify-content: left;
+    align-items: center;
+    margin-right: 730px;
     padding: 20px;
     color: white;
     font-family: var(--fonte_padrao);
@@ -109,8 +113,10 @@ nav ul li a:hover{
 .imagem img {
 
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    top: 20px;
-    left: 580px;
-    bottom: 100px;
+    bottom: 320px;
+    left: 680px;
 }
