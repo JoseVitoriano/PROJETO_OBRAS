@@ -13,16 +13,16 @@
         <div class="container">
         <nav>
             <div class="logo">
-                <span><img src="../imagens/logo.png" alt="">SCO | Tela de Cadastro</span>
+                <span><img src="../imagens/logo.png" alt="">Tela de Cadastro</span>
             </div>
 
             <ul>
-                <li><a href="#" target="_self">Home</a></li>
+                <li><a href="../html/layout.html" target="_self">Home</a></li>
                 <li><a href="../html/cadastro.html" target="_self">Cadastro</a></li>
-                <li><a href="#" target="_self">Pesquisa</a></li>
-                <li><a href="#" target="_self">Indicadores</a></li>
-                <li><a href="#" target="_self">Tutorial</a></li>
-                <li><a href="#" target="_self">Sobre nós</a></li>
+                <li><a href="../html/pesquisa.html" target="_self">Pesquisa</a></li>
+                <li><a href="../html/indicadores.html" target="_self">Indicadores</a></li>
+                <li><a href="../html/tutorial.html" target="_self">Tutorial</a></li>
+                <li><a href="../html/sobrenos.html" target="_self">Sobre nós</a></li>
             </ul>
         </nav>
         </div>
@@ -34,34 +34,37 @@
             <div class="container">
                 <p>Liberação para pagamento</p>
         
-                <div class="input_grupo">
-                    <div class="input_grupo1">
-                        <div class="input_fornecedor">
-                            <label for="cadastro_fornecedor">Fornecedor: </label>
-                            <input id="cadastro_fornecedor" type="text" placeholder="Informe o fornecedor">
-                        </div>
-                        <br>
-                        <div class="input_pedido">
-                            <label for="cadastro_pedido">Nº Pedido: </label>
-                            <input id="cadastro_pedido" type="number" placeholder="Numeração do pedido">
-                        </div>
-                        <br>
-                        <div class="input_notafiscal">
-                            <label for="cadastro_fiscal">Nº Notas Fiscais: </label>
-                            <input id="cadastro_fiscal" type="number" placeholder="Numeração da nota fiscal">
-                        </div>
-                        <br>
-                        <div class="input_valor">
-                            <label for="cadastro_valor">R$ Notas Fiscais: </label>
-                            <input id="cadastro_valor" type="text" placeholder="Formato: R$ x.xxx,xx">
-                        </div>
-                        <br>
-                        <div class="input_data">
-                            <label for="cadastro_data">Data do Cadastro: </label>
-                            <input id="cadastro_data" type="date">
+                <form action="" method="post">
+
+                    <div class="input_grupo">
+                        <div class="input_grupo1">
+                            <div class="input_fornecedor">
+                                <label for="cadastro_fornecedor">Fornecedor: </label>
+                                <input id="cadastro_fornecedor" type="text" placeholder="Informe o fornecedor">
+                            </div>
+                            <br>
+                            <div class="input_pedido">
+                                <label for="cadastro_pedido">Nº Pedido: </label>
+                                <input id="cadastro_pedido" type="number" placeholder="Numeração do pedido">
+                            </div>
+                            <br>
+                            <div class="input_notafiscal">
+                                <label for="cadastro_fiscal">Nº Notas Fiscais: </label>
+                                <input id="cadastro_fiscal" type="number" placeholder="Numeração da nota fiscal">
+                            </div>
+                            <br>
+                            <div class="input_valor">
+                                <label for="cadastro_valor">R$ Notas Fiscais: </label>
+                                <input id="cadastro_valor" type="text" placeholder="Formato: R$ x.xxx,xx">
+                            </div>
+                            <br>
+                            <div class="input_data">
+                                <label for="cadastro_data">Data do Cadastro: </label>
+                                <input id="cadastro_data" type="date">
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
                 <br>
                 <button type="submit">Cadastrar</button>
             </div>
