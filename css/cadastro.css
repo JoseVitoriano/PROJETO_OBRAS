@@ -89,6 +89,23 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
+.formulario form input{
+
+    box-sizing: border-box;
+}
 
 
+.input_fornecedor label{
+
+    font-family: var(--fonte_padrao);
+    color: white;
+    
+}
+
+.input_fornecedor input{
+
+    font-size: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
 
