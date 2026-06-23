@@ -229,6 +229,10 @@ ul li a{
 
 }
 
+.submenu ul li a:hover{
+    color: #3498db;
+}
+
 footer p{
 
     display: flex;
