@@ -92,8 +92,8 @@ nav ul li a:hover{
 main{
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 50vh;
 }
 
@@ -119,13 +119,13 @@ h2{
 }
 
 label{
-    display: block;
+    
     margin-bottom: 5px;
     font-weight: bold;
     color: #0050C3;
 }
 
-main form input select textarea{
+input{
 
     width: 100%;
     padding: 10px;
@@ -134,7 +134,35 @@ main form input select textarea{
     font-size: 14px;
 }
 
-form label input:focus select:focus textarea:focus{
+select{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus{
+    outline: none;
+    border-color: #3498db;
+}
+
+select:focus{
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea:focus{
     outline: none;
     border-color: #3498db;
 }
@@ -148,7 +176,7 @@ form label input:focus select:focus textarea:focus{
     flex: 1;
 }
 
-.btn{
+button{
     width: 100%;
     padding: 12px;
     background: #3498db;
@@ -161,7 +189,7 @@ form label input:focus select:focus textarea:focus{
 
 }
 
-.btn:hover{
+button:hover{
 
     background: #2980b9;
 }
