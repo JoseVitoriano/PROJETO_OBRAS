@@ -89,23 +89,79 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
-.formulario form input{
+main{
 
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
 }
 
+form {
 
-.input_fornecedor label{
+    background: #fff;
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0,1);
+}
 
-    font-family: var(--fonte_padrao);
+h2{
+    text-align: left;
+    margin-bottom: 25px;
     color: white;
-    
+    font-family: var(--fonte_padrao);
+    font-size: 15px;
 }
 
-.input_fornecedor input{
-
-    font-size: 20px;
-    border-radius: 6px;
-    box-sizing: border-box;
+.grupo{
+    margin-bottom: 15px;
 }
 
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0050C3;
+}
+
+main form input select textarea{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form label input:focus select:focus textarea:focus{
+    outline: none;
+    border-color: #3498db;
+}
+
+.linha{
+    display: flex;
+    gap: 15px;
+}
+
+.linha .grupo{
+    flex: 1;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.btn:hover{
+
+    background: #2980b9;
+}

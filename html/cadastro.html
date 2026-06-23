@@ -30,45 +30,62 @@
 
     
     <main>
-        <section class="formulario">
-            <div class="container">
-                <p>Liberação para pagamento</p>
-        
-                <form action="" method="post">
+        <div class="containernovo">
 
-                    <div class="input_grupo">
-                        <div class="input_grupo1">
-                            <div class="input_fornecedor">
-                                <label for="cadastro_fornecedor">Fornecedor: </label>
-                                <input id="cadastro_fornecedor" type="text" placeholder="Informe o fornecedor">
-                            </div>
-                            <br>
-                            <div class="input_pedido">
-                                <label for="cadastro_pedido">Nº Pedido: </label>
-                                <input id="cadastro_pedido" type="number" placeholder="Numeração do pedido">
-                            </div>
-                            <br>
-                            <div class="input_notafiscal">
-                                <label for="cadastro_fiscal">Nº Notas Fiscais: </label>
-                                <input id="cadastro_fiscal" type="number" placeholder="Numeração da nota fiscal">
-                            </div>
-                            <br>
-                            <div class="input_valor">
-                                <label for="cadastro_valor">R$ Notas Fiscais: </label>
-                                <input id="cadastro_valor" type="text" placeholder="Formato: R$ x.xxx,xx">
-                            </div>
-                            <br>
-                            <div class="input_data">
-                                <label for="cadastro_data">Data do Cadastro: </label>
-                                <input id="cadastro_data" type="date">
-                            </div>
-                        </div>
+            <h2>Liberação de Pagamento</h2>
+
+            <form action="">
+
+                <div class="grupo">
+                    <label for="">Fornecedor: </label>
+                    <input type="text" placeholder="Informe o fornecedor">
+                </div>
+
+                <div class="linha">
+                    <div class="grupo">
+                        <label for="">Nº do Pedido: </label>
+                        <input type="text" placeholder="Informe o nº pedido">
                     </div>
-                </form>
-                <br>
-                <button type="submit">Cadastrar</button>
-            </div>
-        </section>
+                </div>
+
+                <div class="grupo">
+                    <label for="">Nº da Nota Fiscal: </label>
+                    <input type="text" placeholder="Informe o nº nota fiscal">                
+                </div>
+
+                <div class="linha">
+                    <div class="grupo">
+                        <label for="">R$ da Nota Fiscal: </label>
+                        <input type="text" placeholder="Informe o R$ nota fiscal">
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <label for="">Status da Liberação: </label>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">Em Andamento</option>
+                        <option value="">Finalizado</option>
+                        <option value="">Informado p/ Pagamento</option>                    
+                    </select>
+                </div>
+
+                <div class="linha">
+                    <div class="grupo">
+                        <label for="">Observações: </label>
+                        <textarea name="" id="" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="bnt">Salvar Cadastro</button>
+
+
+
+
+
+
+            </form>
+        </div>
     </main>
 
     <footer>
