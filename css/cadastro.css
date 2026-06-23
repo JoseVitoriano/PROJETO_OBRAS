@@ -123,6 +123,8 @@ label{
     margin-bottom: 5px;
     font-weight: bold;
     color: #0050C3;
+    font-family: var(--fonte_padrao);
+    font-size: 13px;
 }
 
 input{
@@ -131,6 +133,7 @@ input{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: var(--fonte_padrao);
     font-size: 14px;
 }
 
@@ -186,10 +189,56 @@ button{
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    font-family: var(--fonte_padrao);
+    font-weight: bold;
 
 }
 
 button:hover{
 
     background: #2980b9;
+}
+
+.submenu ul{
+
+    list-style: none;
+    background: black
+
+}
+
+.submenu ul li{
+
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+ul li a{
+
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    transition: 0.6s;
+    font-family: var(--fonte_padrao);
+
+
+}
+
+footer p{
+
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-family: var(--fonte_padrao);
+    color: white;
+    padding: 10px;
+    background-color: #2980b9;
+
+
+
 }
