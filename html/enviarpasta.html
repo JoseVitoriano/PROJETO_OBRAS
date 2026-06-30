@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+        <nav>
+            <div class="logo">
+                <span><img src="../imagens/logo.png" alt="">Tela de Cadastro</span>
+            </div>
+
+            <ul>
+                <li><a href="../html/layout.html" target="_self">Home</a></li>
+                <li><a href="../html/cadastro.html" target="_self">Cadastro</a></li>
+                <li><a href="../html/pesquisa.html" target="_self">Pesquisa</a></li>
+                <li><a href="../html/indicadores.html" target="_self">Indicadores</a></li>
+                <li><a href="../html/tutorial.html" target="_self">Tutorial</a></li>
+                <li><a href="../html/sobrenos.html" target="_self">Sobre nós</a></li>
+            </ul>
+        </nav>
+        </div>
+   </header>
+
+    
+    <main>
+        <div class="containernovo">
+
+            <h2>Liberação de Pagamento</h2>
+
+            <form action="" id="formulario">
+
+                <div class="grupo">
+                    <label for="">Fornecedor: </label>
+                    <input type="text" placeholder="Informe o fornecedor" required>
+                </div>
+
+                <div class="linha">
+                    <div class="grupo">
+                        <label for="">Nº do Pedido: </label>
+                        <input type="text" placeholder="Informe o nº pedido" required>
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <label for="">Nº da Nota Fiscal: </label>
+                    <input type="text" placeholder="Informe o nº nota fiscal" required>                
+                </div>
+
+                <div class="linha">
+                    <div class="grupo">
+                        <label for="">R$ da Nota Fiscal: </label>
+                        <input type="text" placeholder="Informe o R$ nota fiscal" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <label for="">Status da Liberação: </label>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">Em Andamento</option>
+                        <option value="">Finalizado</option>
+                        <option value="">Informado p/ Pagamento</option>                    
+                    </select>
+                </div>
+
+                <div class="linha">
+                    <div class="grupo">
+                        <label for="">Observações: </label>
+                        <textarea name="" id="" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="Recebido" name="Recebido">
+                    <label for="Recebido" style="margin-left: 10px;">Informação recebida</label>
+
+                </div>
+
+                <button type="submit" class="bnt">Salvar Cadastro</button>
+
+                <button type="button" class="email" onclick="enviarEmail()">Enviar por E-mail
+                </button>
+
+                <script>
+                    document.getElementById("formulario").addEventListener("submit",function(e){e.preventDefault();
+                        const dados=new FormData(this);
+                        fetch("/salvar",{method:"POST",
+                    body:dados})
+                    .then(Response=>response.text())
+                    .then(retorno=>{
+                        alert("Registro salvo com sucesso!");
+                    })
+                    .catch(erro=>{
+                        alert("Erro ao salvar.");
+                    })
+                    })
+
+                    function enviarEmail(){
+                        window.location.href="mailto:jose.vitoriano@outlook.com.br?subject=Cadastro de Nota Fiscal";
+                    }
+                </script>
+
+            </form>
+        </div>
+    </main>
+
+
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="submenu">
+
+            <ul>
+                <li><a href="../html/cadastro.html">Liberação de Pagamento</a></li>
+                <li><a href="#">Enviar para Pasta</a></li>
+                <li><a href="#">Adicionar Histórico</a></li>
+            </ul>
+
+        <p>Desenvolvido por: Vitoriano SCO | Padronização de Depósito</p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    
+</body>
+</html>
