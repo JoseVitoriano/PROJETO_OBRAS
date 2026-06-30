@@ -93,10 +93,13 @@ nav ul li a:hover{
     font-size: 55px;
     justify-content: left;
     align-items: center;
-    margin-right: 810px;
+    margin-right: 820px;
     padding: 20px;
     color: white;
     font-family: var(--fonte_padrao);
+    position: relative;
+    right: 0px;
+    top: 100px;
 }
 
 .corpo p{
@@ -104,10 +107,13 @@ nav ul li a:hover{
     font-size: 20px;
     justify-content: left;
     align-items: center;
-    margin-right: 730px;
+    margin-right: 720px;
     padding: 20px;
     color: white;
     font-family: var(--fonte_padrao);
+    position: relative;
+    right: 0px;
+    top: 95px;
 }
 
 .imagem img {
@@ -117,7 +123,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 320px;
+    bottom: 250px;
     left: 680px;
 }
 
